@@ -136,8 +136,16 @@ header{
     position: relative;
     animation: sliding;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 3;
     animation-fill-mode: forwards;
+}
+@keyframes sliding {
+    from{
+        transform: scale(.5);
+    }
+    to{
+        transform: scale(0.9);
+    }
 }
 .article-header{
     
@@ -284,12 +292,4 @@ footer p{
 }
 .fab{
     margin: 0 5px;
-}
-@keyframes sliding {
-    from{
-        transform: scale(.5);
-    }
-    to{
-        transform: scale(0.9);
-    }
 }
