@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather&family=Poppins:wght@400;600&display=swap');
-@media (max-width:767px){
+@media (max-width: 667px){
+
 
     .container .first-article{
         grid-template-columns: repeat(1, 1fr);
@@ -47,8 +48,22 @@
   font-size: 20px;
         white-space: nowrap;
     }
-
+    .popular .product{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+ 
 }
+@media only screen and (max-width: 1024px){
+    .container .first-article{
+       justify-content: center;
+    }
+    .popular .product{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -133,13 +148,20 @@ header{
 /* ===========
 second section 
 ========== */
+.popular{
+    margin-top: 40px;
+}
+.popular h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
 .product{
     
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     border-radius: 20px;
     grid-column-gap: 30px;
-    
+   
 }
 .product-details{
     
@@ -156,5 +178,21 @@ second section
     width: 300px;
     height: 256px;
 }
-
+.fas.fa-star{
+    color: orange;
+}
+.product-details p{
+    font-size: 15px;
+}
+.see-btn{
+    width: 100px;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: white;
+    color: #E02C6D;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    
+}
     
