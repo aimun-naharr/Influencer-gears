@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather&family=Poppins:wght@400;600&display=swap');
+@media (max-width:767px){
+
+    .container .first-article{
+        grid-template-columns: repeat(1, 1fr);
+       padding: 10px;
+        justify-content: center;
+        height: fit-content;
+        font-size: -3em;
+    }
+   
+    .left-items .article-header{
+        font-size: 30px;
+        padding: 10px;
+        line-height: 40px;
+        text-align: center;
+    }
+      
+    .left-items{
+        align-items: center;
+    }
+    .article-left{
+        width: 350px;
+    }
+    .article-left p{
+        font-size: 10px;
+        text-align: center;
+    }
+    .article-right img{
+        margin: 0;
+        height: 250px;
+        
+    }
+    .prebook-btn{
+        padding: 10px 20px;
+       height: 40px;
+       white-space: nowrap;
+       width: 80px;
+       text-align: center;
+
+    }
+    .article-right{
+        align-items: center;
+    }
+    .page-title{
+        padding: 10px;
+  font-size: 20px;
+        white-space: nowrap;
+    }
+
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* ===========
+first section 
+========== */
+
+.container{
+    max-width: 1200px;
+   margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    color: #3A3A3A;
+    font-weight: 800;
+    
+}
+header{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.first-article{
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  margin: 0 auto;
+}
+    
+
+.left-items{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.article-left{
+    flex: 1;
+    align-items: center;
+    
+   
+}
+.article-right{
+    flex: 1;
+    justify-content: center;
+   
+ 
+}
+.article-right img{
+    max-height: 400px;
+    max-width: 400px;
+    
+}
+.article-header{
+    
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 60px;
+}
+.article-left p{
+    margin: 10px 0;
+    
+}
+.prebook-btn{
+    width: 30%;
+    padding: 10px 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+}
+
+
+.fas.fa-long-arrow-alt-right{
+    font-size: 15px;
+}
+
+/* ===========
+second section 
+========== */
+.product{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 20px;
+    grid-column-gap: 30px;
+    
+}
+.product-details{
+    
+    display: flex;
+    flex-direction: column;
+  padding: 10px 0 30px 15px;
+    justify-content: center;
+    border-radius: 5px;
+   width: 320px;
+   margin-bottom: 40px;
+   box-shadow: -2px -2px 5px grey;
+}
+.product-details img{
+    width: 300px;
+    height: 256px;
+}
+
+    
