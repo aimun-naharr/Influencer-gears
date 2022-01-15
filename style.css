@@ -133,7 +133,11 @@ header{
 .article-right img{
     max-height: 400px;
     max-width: 400px;
-    
+    position: relative;
+    animation: sliding;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
 }
 .article-header{
     
@@ -236,20 +240,56 @@ third section
     transform: scale(1.1);
     transition: 1s;
 }
-.image:hover .details h1{
+.photo-details:hover .details{
     display: block;
-    background-color: rgba(134, 127, 127, 0.699);
+   
     color: white;
     position: absolute;
-    bottom: 120px;
+    top: 2050px;
+    padding-top: 10px;
+    height: 40px;
+    width: 300px;
 
 }
 .photo-details{
     
-    width: 330px;
+    width: 100%;
 }
-.details h1{
+.details{
     position: relative;
-width: 318px;
+
 display: none;
+}
+
+/* ==================
+footer section
+===================== */
+
+footer{
+    margin-top: 100px;
+    padding: 40px 0 20px 0;
+    background-color: #072227;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+}
+footer h1{
+    text-align: center;
+    font-weight: 600;
+}
+footer p{
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+.fab{
+    margin: 0 5px;
+}
+@keyframes sliding {
+    from{
+        transform: scale(.5);
+    }
+    to{
+        transform: scale(0.9);
+    }
 }
